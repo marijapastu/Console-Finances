@@ -11,7 +11,7 @@ N/A
 
 The website can be accessed via the link included in the About section of the repository or below:
 
-[](https://marijapastu.github.io/Console-Finances/)
+[Link to the website](https://marijapastu.github.io/Console-Finances/)
 
 The solution of this challenge is printed to the console of the website and displayed below. 
 
