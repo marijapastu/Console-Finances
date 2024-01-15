@@ -118,7 +118,7 @@ console.log("Average Change: " + avrChange);
 
 // Calculating the greatest increase in profits (date and difference in the amounts) over the entire period.
 
-monthMax = 0;
+monthMax = " ";
 maxIncrease = 0;
 for (var i = 1; i < finances.length; i++) {
   if ((finances[i][1] - finances[i-1][1]) > maxIncrease) {
@@ -133,7 +133,7 @@ console.log("Greatest Increase in Profits/Losses: " + monthMax + " ($" + maxIncr
 
 // The greatest decrease in losses (date and difference in the amounts) over the entire period.
 
-monthMin = 0;
+monthMin = " ";
 minIncrease = 0;
 for (var i = 1; i < finances.length; i++) {
   if ((finances[i][1] - finances[i-1][1]) < minIncrease) {
