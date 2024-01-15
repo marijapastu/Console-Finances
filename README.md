@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
- The website can be accessed via the link included in the About section of the repository or below:
+The website can be accessed via the link included in the About section of the repository or below:
 
 
 
@@ -23,5 +23,5 @@ N/A
 
 ## Licence
 
-Please refer to the LOICENSE in the repository.
+Please refer to the LICENSE in the repository.
 
