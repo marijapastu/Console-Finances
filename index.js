@@ -86,3 +86,62 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+console.log("Financial Analysis");
+
+console.log("---------------------------");
+
+// Calculating total number of months in the dataset
+
+console.log("Total months: " + finances.length);
+
+// Calculating Net total  amount of Profit/Loss over the entire period
+
+var total = 0;
+
+for (var i = 0; i < finances.length; i++) {
+    total += finances[i][1];
+
+}
+console.log("Total: $" + total);
+
+// Calculating the average of the chnages in Profit/Loss over the entire period
+
+sum = 0;
+for (var i = 1; i < finances.length; i++) {
+  sum += (finances[i][1] - finances[i-1][1]);
+  var avrChange = Math.round((sum/(finances.length - 1)) * 100) / 100;
+  
+}
+
+console.log("Average Change: " + avrChange);
+
+// Calculating the greatest increase in profits (date and difference in the amounts) over the entire period.
+
+monthMax = 0;
+maxIncrease = 0;
+for (var i = 1; i < finances.length; i++) {
+  if ((finances[i][1] - finances[i-1][1]) > maxIncrease) {
+    maxIncrease = (finances[i][1] - finances[i-1][1]);
+    monthMax = finances[i][0];
+  }  
+}
+
+console.log("Greatest Increase in Profits/Losses: " + monthMax + " ($" + maxIncrease + ")");
+
+
+
+// The greatest decrease in losses (date and difference in the amounts) over the entire period.
+
+monthMin = 0;
+minIncrease = 0;
+for (var i = 1; i < finances.length; i++) {
+  if ((finances[i][1] - finances[i-1][1]) < minIncrease) {
+    minIncrease = (finances[i][1] - finances[i-1][1]);
+    monthMin = finances[i][0];
+  }  
+}
+
+console.log("Greatest Decrease in Profits/Losses: " + monthMin + " ($" + minIncrease + ")");
+
+
