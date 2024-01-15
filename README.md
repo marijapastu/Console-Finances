@@ -10,10 +10,9 @@ N/A
 ## Usage
 
 The website can be accessed via the link included in the About section of the repository or below:
+[](https://marijapastu.github.io/Console-Finances/)
 
-
-
-The solution of this challenge is printed to the console of the website and displayed below. 
+The solution of this challenge is printed to the cnsole of the website and displayed below. 
 
 ![Alt text](<Screenshot 2024-01-15 at 21.56.24.png>)
 
